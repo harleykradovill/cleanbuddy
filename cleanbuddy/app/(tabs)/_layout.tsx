@@ -12,13 +12,20 @@ export default function TabLayout() {
       screenOptions={{
         tabBarActiveTintColor: Colors.green,
         headerShown: false,
+          tabBarStyle: { height: '8%' },
+          tabBarLabelStyle: {
+            fontSize: 12,
+            marginTop: -8,
+            marginBottom: 8,
+            fontWeight: '500',
+          },
       }}>
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
+          title: 'Clean Time',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
+            <TabBarIcon name={focused ? 'time' : 'time-outline'} color={color} />
           ),
         }}
       />
