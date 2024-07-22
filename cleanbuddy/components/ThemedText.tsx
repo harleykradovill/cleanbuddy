@@ -1,6 +1,7 @@
 import { Text, type TextProps, StyleSheet } from 'react-native';
 
 import { useThemeColor } from '@/hooks/useThemeColor';
+import {Colors} from "@/constants/Colors";
 
 export type ThemedTextProps = TextProps & {
   lightColor?: string;
@@ -50,6 +51,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     alignItems: "center",
     alignContent: "center",
+    color: Colors.green,
   },
   subtitle: {
     fontSize: 20,
