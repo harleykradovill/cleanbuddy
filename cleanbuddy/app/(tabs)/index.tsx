@@ -16,6 +16,19 @@ export default function HomeScreen() {
         <ThemedView style={styles.titleContainer}>
             <ThemedText type="title">Clean Buddy</ThemedText>
         </ThemedView>
+
+        <View style = {{
+            flex: 1,
+            justifyContent: 'center',
+            paddingLeft: '7%',
+            paddingRight: '7%'
+        }}>
+            <Text style = {{
+                fontSize: 28,
+            }
+            }>Hello, I'm <Text style={{fontWeight: 'bold'}}>&name&</Text> and I am an addict.</Text>
+
+        </View>
     </View>
   );
 }
@@ -27,7 +40,7 @@ const styles = StyleSheet.create({
     gap: 0,
     position: "absolute",
       top: '5%',
-      left: '10%',
+      left: '7%',
   },
   stepContainer: {
     gap: 8,
