@@ -1,31 +1,33 @@
-import { Image, StyleSheet, Platform } from 'react-native';
+import {Image, StyleSheet, Platform, View, Text} from 'react-native';
 
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
+import {Colors} from "@/constants/Colors";
 
 export default function HomeScreen() {
   return (
-    <ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
-      headerImage={
-        <Image
-          source={require('@/assets/images/partial-react-logo.png')}
-          style={styles.reactLogo}
-        />
-      }>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome to CleanBuddy</ThemedText>
-      </ThemedView>
-    </ParallaxScrollView>
+    <View style ={{ //PRIMARY VIEW
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'flex-start',
+        backgroundColor: Colors.background,
+    }}>
+        <ThemedView style={styles.titleContainer}>
+            <ThemedText type="title">Clean Buddy</ThemedText>
+        </ThemedView>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   titleContainer: {
     flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'flex-start',
     gap: 0,
+    position: "absolute",
+      top: '5%',
+      left: '10%',
   },
   stepContainer: {
     gap: 8,
