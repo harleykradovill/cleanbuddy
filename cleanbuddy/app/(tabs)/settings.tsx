@@ -39,6 +39,11 @@ export default function TabTwoScreen() {
               placeholder="Enter your name"
           />
 
+          <Text style = {{
+            fontSize: 18,
+          }
+          }>Clean Date</Text>
+
 
         </View>
       </View>
