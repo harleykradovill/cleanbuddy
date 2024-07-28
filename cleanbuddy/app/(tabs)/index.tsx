@@ -28,6 +28,11 @@ export default function HomeScreen() {
             }
             }>Hello, I'm <Text style={{fontWeight: 'bold'}}>&name&</Text> and I am an addict.</Text>
 
+            <Text style = {{
+                fontSize: 22,
+            }
+            }>I have  <Text style={{fontWeight: 'bold'}}>&datecount&</Text> clean.</Text>
+
         </View>
     </View>
   );
